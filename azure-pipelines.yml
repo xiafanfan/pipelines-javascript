@@ -18,13 +18,14 @@ variables:
   # Working Directory
   workingDirectory: '.'
   
+- task: ManualValidation@0
+  inputs:
+    notifyUsers: 'fxia@microsoft.com'  
 pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: ManualValidation@0
-  inputs:
-    notifyUsers: 'fxia@microsoft.com'
+
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'

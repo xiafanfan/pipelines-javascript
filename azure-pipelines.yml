@@ -17,6 +17,7 @@ trigger:
 variables:
   # Working Directory
   workingDirectory: '.'
+  system.debug: true
 
 pool:
   vmImage: ubuntu-latest

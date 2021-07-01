@@ -20,7 +20,8 @@ variables:
   system.debug: true
 
 pool:
-  vmImage: ubuntu-latest
+  "vmsspool"
+  # vmImage: ubuntu-latest
 
 steps:
 - task: NodeTool@0
